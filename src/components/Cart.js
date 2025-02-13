@@ -18,6 +18,7 @@ function Cart() {
                 <button onClick={() => updateCart(cart - 1)}>
                     Retirer
                 </button>
+                <button onClick={() => updateCart(0)}>Vider le panier</button>
             </div>
             <h3>Total : {monsteraPrice * cart}€</h3>
         </div>
