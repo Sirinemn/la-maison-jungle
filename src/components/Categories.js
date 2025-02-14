@@ -1,6 +1,6 @@
 import { plantList } from "../datas/plantList";
 
-function Categories({activeCategory, setActiveCategory}) {
+function Categories({ setActiveCategory}) {
     const categories = plantList.reduce(
 		(acc, plant) =>
 			acc.includes(plant.category) ? acc : acc.concat(plant.category),

@@ -2,7 +2,7 @@ import { plantList } from '../datas/plantList'
 import '../styles/ShoppingList.css'
 import PlantItem from './PlantItem'
 
-function ShoppingList({cart, updateCart, activeCategory, setActiveCategory}) {
+function ShoppingList({cart, updateCart, activeCategory}) {
     let filter = false
     if (activeCategory) {
         filter = true

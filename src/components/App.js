@@ -18,8 +18,8 @@ function App() {
           </Banner>
           <div className='lmj-layout-inner'>
               <Cart cart={cart} updateCart={updateCart} />
-              <Categories activeCategory={activeCategory} setActiveCategory={setActiveCategory}/>
-              <ShoppingList cart={cart} updateCart={updateCart} activeCategory={activeCategory} setActiveCategory={setActiveCategory}/>
+              <Categories setActiveCategory={setActiveCategory}/>
+              <ShoppingList cart={cart} updateCart={updateCart} activeCategory={activeCategory}/>
           </div>
           <Footer />
       </div>
