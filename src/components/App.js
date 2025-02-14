@@ -8,7 +8,8 @@ import Categories from './Categories';
 
 function App() {
   const [cart, updateCart] = useState([])
-  
+  const [activeCategory, setActiveCategory] = useState('')
+
   return (
       <div>
           <Banner>
@@ -17,8 +18,8 @@ function App() {
           </Banner>
           <div className='lmj-layout-inner'>
               <Cart cart={cart} updateCart={updateCart} />
-              <Categories />
-              <ShoppingList cart={cart} updateCart={updateCart} />
+              <Categories activeCategory={activeCategory} setActiveCategory={setActiveCategory}/>
+              <ShoppingList cart={cart} updateCart={updateCart} activeCategory={activeCategory} setActiveCategory={setActiveCategory}/>
           </div>
           <Footer />
       </div>
